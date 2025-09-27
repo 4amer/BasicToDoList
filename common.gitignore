@@ -1,60 +1,60 @@
 # From .NET Core 3.0 you can use the command: `dotnet new gitignore` to generate a customizable .gitignore file
 
-ToDoListBackend/*.swp
-ToDoListBackend/*.*~
-ToDoListBackend/project.lock.json
-ToDoListBackend/.DS_Store
-ToDoListBackend/*.pyc
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
 
 # Visual Studio Code
-ToDoListBackend/.vscode
+.vscode
 
 # User-specific files
-ToDoListBackend/*.suo
-ToDoListBackend/*.user
-ToDoListBackend/*.userosscache
-ToDoListBackend/*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
 # Build results
-ToDoListBackend/[Dd]ebug/
-ToDoListBackend/[Dd]ebugPublic/
-ToDoListBackend/[Rr]elease/
-ToDoListBackend/[Rr]eleases/
-ToDoListBackend/x64/
-ToDoListBackend/x86/
-ToDoListBackend/build/
-ToDoListBackend/bld/
-ToDoListBackend/[Bb]in/
-ToDoListBackend/[Oo]bj/
-ToDoListBackend/msbuild.log
-ToDoListBackend/msbuild.err
-ToDoListBackend/msbuild.wrn
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
 
 # Visual Studio 2015
 ToDoListBackend/.vs/
 
 
 # Logs
-ToDoListFrontend/logs
-ToDoListFrontend/*.log
-ToDoListFrontend/npm-debug.log*
-ToDoListFrontend/yarn-debug.log*
-ToDoListFrontend/yarn-error.log*
-ToDoListFrontend/pnpm-debug.log*
-ToDoListFrontend/lerna-debug.log*
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-ToDoListFrontend/node_modules
-ToDoListFrontend/dist
-ToDoListFrontend/dist-ssr
-ToDoListFrontend/*.local
+node_modules
+dist
+dist-ssr
+*.local
 
 # Editor directories and files
-ToDoListFrontend/.vscode/*
-ToDoListFrontend/!.vscode/extensions.json
-ToDoListFrontend/.idea
-ToDoListFrontend/.DS_Store
-ToDoListFrontend/*.suo
-ToDoListFrontend/*.ntvs*
-ToDoListFrontend/*.njsproj
-ToDoListFrontend/*.sln
-ToDoListFrontend/*.sw?
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
