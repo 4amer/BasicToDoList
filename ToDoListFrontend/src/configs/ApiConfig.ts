@@ -1,0 +1,1 @@
+export const ApiGetToDoInfos = "http://localhost:5262/api/ToDo";
