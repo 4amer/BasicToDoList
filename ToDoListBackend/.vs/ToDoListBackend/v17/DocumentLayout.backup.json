@@ -1,25 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\",
+  "WorkspaceRootPath": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\todolistbackend\\todolistbackend\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\todolistbackend\\todolistbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\migrations\\20250928162821_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\migrations\\20250928162821_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\todolistbackend\\todolistbackend\\todolistbackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\todolistbackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\models\\todoitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\models\\todoitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\todolistbackend\\todolistbackend\\models\\todoinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\models\\todoinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\models\\todoinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\todolistbackend\\todolistbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\todolistbackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\todolistbackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|c:\\users\\gufbr\\homefullstuck\\basictodolist\\todolistbackend\\todolistbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C80028E-F53C-48A6-B902-7C3EC989792B}|ToDoListBackend\\ToDoListBackend.csproj|solutionrelative:todolistbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,15 +46,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "20250928162821_init.cs",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Migrations\\20250928162821_init.cs",
+              "RelativeDocumentMoniker": "ToDoListBackend\\Migrations\\20250928162821_init.cs",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Migrations\\20250928162821_init.cs",
+              "RelativeToolTip": "ToDoListBackend\\Migrations\\20250928162821_init.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T16:28:22.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ToDoItems.cs",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Models\\ToDoItems.cs",
+              "RelativeDocumentMoniker": "ToDoListBackend\\Models\\ToDoItems.cs",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Models\\ToDoItems.cs",
+              "RelativeToolTip": "ToDoListBackend\\Models\\ToDoItems.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T16:18:13.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "ToDoListBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\appsettings.json",
+              "RelativeToolTip": "ToDoListBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-28T16:10:24.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ToDoListBackend\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ToDoListBackend\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T16:09:23.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ToDoListBackend\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Properties\\launchSettings.json",
               "RelativeToolTip": "ToDoListBackend\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -47,11 +115,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ToDoListBackend.http",
-              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\ToDoListBackend.http",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\ToDoListBackend.http",
               "RelativeDocumentMoniker": "ToDoListBackend\\ToDoListBackend.http",
-              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\ToDoListBackend.http",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\ToDoListBackend.http",
               "RelativeToolTip": "ToDoListBackend\\ToDoListBackend.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
@@ -60,37 +128,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ToDoInfo.cs",
-              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\Models\\ToDoInfo.cs",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Models\\ToDoInfo.cs",
               "RelativeDocumentMoniker": "ToDoListBackend\\Models\\ToDoInfo.cs",
-              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\Models\\ToDoInfo.cs",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Models\\ToDoInfo.cs",
               "RelativeToolTip": "ToDoListBackend\\Models\\ToDoInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T13:38:50.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ToDoController.cs",
-              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\Controllers\\ToDoController.cs",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Controllers\\ToDoController.cs",
               "RelativeDocumentMoniker": "ToDoListBackend\\Controllers\\ToDoController.cs",
-              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\Controllers\\ToDoController.cs",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Controllers\\ToDoController.cs",
               "RelativeToolTip": "ToDoListBackend\\Controllers\\ToDoController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T12:54:28.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Program.cs",
               "RelativeDocumentMoniker": "ToDoListBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\ToDoListBackend\\ToDoListBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\gufbr\\HomeFullStuck\\BasicToDoList\\ToDoListBackend\\ToDoListBackend\\Program.cs",
               "RelativeToolTip": "ToDoListBackend\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

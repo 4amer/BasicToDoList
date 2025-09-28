@@ -28,5 +28,27 @@ namespace ToDoListBackend.Controllers
 
             return Ok(ArrayOfInfos);
         }
+
+        [HttpPost("PostToDoInfo")]
+        public IActionResult PostToDoInfo([FromBody] ToDoInfo toDoInfo)
+        {
+            List<ToDoInfo> toDoInfos = new();
+
+            ToDoInfo toDoInfoa = new ToDoInfo
+            {
+                Id = 1,
+                Title = "To do",
+                Discription = "Something",
+                IsDone = false
+            };
+
+            toDoInfos.Add(toDoInfoa);
+            toDoInfos.Add(toDoInfoa);
+            toDoInfos.Add(toDoInfoa);
+
+            ToDoInfo[] ArrayOfInfos = toDoInfos.ToArray();
+
+            return Ok(toDoInfos);
+        }
     }
 }
