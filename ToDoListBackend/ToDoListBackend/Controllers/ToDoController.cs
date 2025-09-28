@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ToDoListBackend.Models;
+using ToDoListBackend.Services.Interfaces;
 
 namespace ToDoListBackend.Controllers
 {
@@ -7,48 +8,54 @@ namespace ToDoListBackend.Controllers
     [Route("api/[controller]")]
     public class ToDoController : ControllerBase
     {
-        [HttpGet("GetToDoInfos")]
-        public IActionResult GetToDoInfos()
+        private readonly IToDoListService _toDoListService;
+        private readonly ILogger<ToDoController> _logger;
+        public ToDoController(IToDoListService toDoListService, ILogger<ToDoController> logger) 
         {
-            List<ToDoInfo> toDoInfos = new ();
-
-            ToDoInfo toDoInfo = new ToDoInfo
-            {
-                Id = 1,
-                Title = "To do",
-                Discription = "Something",
-                IsDone = false
-            };
-
-            toDoInfos.Add(toDoInfo);
-            toDoInfos.Add(toDoInfo);
-            toDoInfos.Add(toDoInfo);
-
-            ToDoInfo[] ArrayOfInfos = toDoInfos.ToArray();
-
-            return Ok(ArrayOfInfos);
+            _toDoListService = toDoListService;
+            _logger = logger;
         }
 
-        [HttpPost("PostToDoInfo")]
-        public IActionResult PostToDoInfo([FromBody] ToDoInfo toDoInfo)
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
         {
-            List<ToDoInfo> toDoInfos = new();
-
-            ToDoInfo toDoInfoa = new ToDoInfo
+            try
             {
-                Id = 1,
-                Title = "To do",
-                Discription = "Something",
-                IsDone = false
-            };
+                if (id <= 0)
+                    return BadRequest("Invalid ID");
 
-            toDoInfos.Add(toDoInfoa);
-            toDoInfos.Add(toDoInfoa);
-            toDoInfos.Add(toDoInfoa);
+                ToDoItems[] toDoItems = await _toDoListService.GetItemsByIdAsync(id);
 
-            ToDoInfo[] ArrayOfInfos = toDoInfos.ToArray();
+                if (toDoItems == null)
+                    return NotFound($"No items found for id {id}");
 
-            return Ok(toDoInfos);
+                return Ok(toDoItems);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error retriving todo item by id {id}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] ToDoItems toDoInfo)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                await _toDoListService.CreateAndAddItemAsync(toDoInfo);
+
+                return CreatedAtAction(nameof(GetById), new { id = toDoInfo.Id }, toDoInfo);
+            }
+            catch (Exception ex) 
+            {
+                _logger.LogError(ex, $"Error creating todo item");
+                return StatusCode(500, "Internal server error");
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-using Microsoft.Extensions.DependencyInjection;
+using ToDoListBackend.Services;
+using ToDoListBackend.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ string allowOrigins = "origins";
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IToDoListService, ToDoListService>();
 
 builder.Services.AddCors(option =>
 {

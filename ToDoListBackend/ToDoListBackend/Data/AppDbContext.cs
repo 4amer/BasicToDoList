@@ -19,5 +19,6 @@ namespace ToDoListBackend.Data
         }
 
         public DbSet<ToDoItems> ToDoItems { get; set; }
+        public DbSet<Users> Users { get; set; }
     } 
 }
