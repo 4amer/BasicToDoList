@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using ToDoListBackend.Data;
 using ToDoListBackend.Repositories;
 using ToDoListBackend.Repositories.Interfaces;
 using ToDoListBackend.Services;
@@ -10,6 +12,9 @@ string allowOrigins = "origins";
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase")));
 
 builder.Services.AddScoped<IToDoRepository, ToDoRepository>();
 builder.Services.AddScoped<IToDoListService, ToDoListService>();
