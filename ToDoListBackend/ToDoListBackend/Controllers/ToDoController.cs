@@ -8,9 +8,13 @@ namespace ToDoListBackend.Controllers
     [Route("api/[controller]")]
     public class ToDoController : ControllerBase
     {
+        //TODO: think about that all controllers has similareties
+        //and we could use inheritens to minimize code copy/pasting
+
         private readonly IToDoListService _toDoListService;
         private readonly ILogger<ToDoController> _logger;
-        public ToDoController(IToDoListService toDoListService, ILogger<ToDoController> logger) 
+        public ToDoController(IToDoListService toDoListService,
+            ILogger<ToDoController> logger) 
         {
             _toDoListService = toDoListService;
             _logger = logger;
@@ -25,7 +29,7 @@ namespace ToDoListBackend.Controllers
                 if (id <= 0)
                     return BadRequest("Invalid ID");
 
-                ToDoItems[] toDoItems = await _toDoListService.GetItemsByIdAsync(id);
+                List<ToDoItems> toDoItems = await _toDoListService.GetItemsByIdAsync(id);
 
                 if (toDoItems == null)
                     return NotFound($"No items found for id {id}");
@@ -47,9 +51,9 @@ namespace ToDoListBackend.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                await _toDoListService.CreateAndAddItemAsync(toDoInfo);
+                ToDoItems createItem = await _toDoListService.CreateAndAddItemAsync(toDoInfo);
 
-                return CreatedAtAction(nameof(GetById), new { id = toDoInfo.Id }, toDoInfo);
+                return CreatedAtAction(nameof(GetById), new { id = createItem.Id }, createItem);
             }
             catch (Exception ex) 
             {

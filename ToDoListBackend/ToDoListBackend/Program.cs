@@ -1,3 +1,5 @@
+using ToDoListBackend.Repositories;
+using ToDoListBackend.Repositories.Interfaces;
 using ToDoListBackend.Services;
 using ToDoListBackend.Services.Interfaces;
 
@@ -9,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<IToDoRepository, ToDoRepository>();
 builder.Services.AddScoped<IToDoListService, ToDoListService>();
 
 builder.Services.AddCors(option =>

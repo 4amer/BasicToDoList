@@ -4,7 +4,7 @@ namespace ToDoListBackend.Services.Interfaces
 {
     public interface IToDoListService
     {
-        public async Task CreateAndAddItemAsync(ToDoItems item);
-        public async Task<ToDoItems[]> GetItemsByIdAsync(int id);
+        public Task<ToDoItems> CreateAndAddItemAsync(ToDoItems item);
+        public Task<List<ToDoItems>> GetItemsByIdAsync(int id);
     }
 }

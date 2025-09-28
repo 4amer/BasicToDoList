@@ -1,18 +1,27 @@
 ﻿using ToDoListBackend.Models;
+using ToDoListBackend.Repositories.Interfaces;
 using ToDoListBackend.Services.Interfaces;
 
 namespace ToDoListBackend.Services
 {
     public class ToDoListService : IToDoListService
     {
-        public async Task CreateAndAddItemAsync(ToDoItems item)
-        {
+        private readonly IToDoRepository _toDoRepository;
 
+        public ToDoListService(IToDoRepository toDoRepository)
+        {
+            _toDoRepository = toDoRepository;
         }
 
-        public async Task<ToDoItems[]> GetItemsByIdAsync(int id)
+        public async Task<ToDoItems> CreateAndAddItemAsync(ToDoItems item)
         {
-            return null;
+            item.Id = 1;
+            return await _toDoRepository.AddToDoItem(item);
+        }
+
+        public async Task<List<ToDoItems>> GetItemsByIdAsync(int id)
+        {
+            return await _toDoRepository.GetToDoItems(id);
         }
     }
 }
