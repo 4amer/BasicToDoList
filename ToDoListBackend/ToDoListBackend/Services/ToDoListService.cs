@@ -15,7 +15,8 @@ namespace ToDoListBackend.Services
 
         public async Task<ToDoItems> CreateAndAddItemAsync(ToDoItems item)
         {
-            item.Id = 1;
+            item.UserId = 1;
+            item.IsDone = false;
             return await _toDoRepository.AddToDoItem(item);
         }
 
