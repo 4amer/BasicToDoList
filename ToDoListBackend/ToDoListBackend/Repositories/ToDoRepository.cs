@@ -16,7 +16,7 @@ namespace ToDoListBackend.Repositories
 
         public async Task<ToDoItems> AddToDoItem(ToDoItems toDoItems)
         {
-            _appDbContext.ToDoItems.Add(toDoItems);
+            await _appDbContext.ToDoItems.AddAsync(toDoItems);
             await _appDbContext.SaveChangesAsync();
             return toDoItems;
         }

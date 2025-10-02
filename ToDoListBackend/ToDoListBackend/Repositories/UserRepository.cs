@@ -22,7 +22,7 @@ namespace ToDoListBackend.Repositories
 
         public async Task<Users> GetUserWithSameEmailAsync(string email)
         {
-            Users userWithEmail = await _appDbContext.Users.FirstAsync(item => item.Email == email);
+            Users userWithEmail = await _appDbContext.Users.FirstOrDefaultAsync(item => item.Email == email);
             return userWithEmail;
         }
     }

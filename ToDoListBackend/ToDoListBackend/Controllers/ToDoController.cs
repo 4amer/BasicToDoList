@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc;
 using ToDoListBackend.Models;
 using ToDoListBackend.Services.Interfaces;
 
@@ -21,11 +22,13 @@ namespace ToDoListBackend.Controllers
         }
 
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        [HttpGet]
+        public async Task<IActionResult> GetById()
         {
             try
             {
+                int id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+
                 if (id <= 0)
                     return BadRequest("Invalid ID");
 
@@ -38,7 +41,7 @@ namespace ToDoListBackend.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"Error retriving todo item by id {id}");
+                _logger.LogError(ex, $"Error retriving todo items");
                 return StatusCode(500, "Internal server error");
             }
         }
@@ -50,6 +53,10 @@ namespace ToDoListBackend.Controllers
             {
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
+
+                int id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+
+                toDoInfo.UserId = id;
 
                 ToDoItems createItem = await _toDoListService.CreateAndAddItemAsync(toDoInfo);
 

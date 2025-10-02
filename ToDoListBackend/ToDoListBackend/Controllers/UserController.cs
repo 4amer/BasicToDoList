@@ -16,7 +16,7 @@ namespace ToDoListBackend.Controllers
             _userService = userService;
         }
 
-        [HttpPost("reg")]
+        [HttpPost("register")]
         public async Task<IActionResult> RegistrateUser([FromBody] Users user)
         {
             try
@@ -24,9 +24,18 @@ namespace ToDoListBackend.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
+                Users userBackUp = new Users()
+                {
+                    Email = user.Email,
+                    PasswordHash = user.PasswordHash,
+                    UserName = user.UserName
+                };
+
                 await _userService.RegistraterAsync(user);
 
-                return Ok();
+                AuthRequst authRequst = await _userService.LogginAsync(userBackUp);
+
+                return Ok(authRequst);
             }
             catch (Exception ex) 
             {
@@ -35,7 +44,7 @@ namespace ToDoListBackend.Controllers
             }
         }
 
-        [HttpPost("log")]
+        [HttpPost("loggin")]
         public async Task<IActionResult> LogginUser([FromBody] Users user)
         {
             try
@@ -43,9 +52,9 @@ namespace ToDoListBackend.Controllers
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                await _userService.RegistraterAsync(user);
+                AuthRequst authRequst = await _userService.LogginAsync(user);
 
-                return Ok();
+                return Ok(authRequst);
             }
             catch (Exception ex)
             {
